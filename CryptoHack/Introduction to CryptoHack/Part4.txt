@@ -1,0 +1,1 @@
+Simply called the "bytes.fromhex()" method in a print statement for the hex value and obtained the flag.

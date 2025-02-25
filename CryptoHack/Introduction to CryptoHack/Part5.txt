@@ -1,0 +1,1 @@
+Converted the Hex to bytes, and then encoded the bytes using base64.b64encode which provided me with the flag. 

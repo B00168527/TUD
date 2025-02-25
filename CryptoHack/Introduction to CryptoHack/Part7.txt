@@ -1,0 +1,1 @@
+I imported the pwn (pwntools) library and added vars for the values mentioned. I called the "xor()" method for the two values which provided the result.

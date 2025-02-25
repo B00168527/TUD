@@ -1,0 +1,12 @@
+By following the help provided on the challenge: 
+
+Commutative: A ⊕ B = B ⊕ A
+Associative: A ⊕ (B ⊕ C) = (A ⊕ B) ⊕ C
+Identity: A ⊕ 0 = A
+Self-Inverse: A ⊕ A = 0
+
+In all the XOR's, I make sure to convert the hex to bytes. 
+I first XOR'd the KEY1 with KEY2 ^ KEY1
+Next, I XOR'd "KEY2 ^ KEY3" with "KEY2 ^ KEY1"
+
+Finally, I XOR'd the flag value with the results of XOR'ing all the XOR'd values from above which provided me with the answer.

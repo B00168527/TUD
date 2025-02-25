@@ -1,0 +1,1 @@
+After installing the library needed, the next step was to use the method "long_to_bytes()" to convert the integer. After this, I simply printed out the flag and entered it. 

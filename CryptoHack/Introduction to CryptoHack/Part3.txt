@@ -1,0 +1,1 @@
+To obtain the flag, the python code loops through the array to convert each ASCII to a character using the "chr()" method and prints the flag out at the end. I then entered this flag as the answer and completed the exercise.

@@ -1,0 +1,2 @@
+No coding needed. Simply copy and pasted the text to capture the flag.
+Flag is "crypto{y0ur_f1rst_fl4g}"

@@ -1,0 +1,2 @@
+To find the flag, we need to loop through all the options of one byte and xor it with the bytes from the hex value provided.
+After looping through 0 to 256 and xor'ing it with the cipher given, each value was printed out in the command line. After inspectingt the values printed, I found the one which started with "crypto". 

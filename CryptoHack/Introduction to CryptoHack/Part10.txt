@@ -1,0 +1,4 @@
+The hint for this challenge references that knowing the flag format will help. 
+In all the challenges, the flag format begins with "crypto{". Know this, I got the bytes values of the chars and XOR'ed it with the message in bytes. 
+
+The result provided me with the beginning of the key, which I then XOR'ed with the message to reveal the full flag.

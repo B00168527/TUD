@@ -1,0 +1,4 @@
+To solve this challenege, I used the Euclid's Algorithm to find the Greatest Common Divisor. 
+The function I created has a while loop which runs while a is not equal to be. If they are equal, a is returned to provide the GCD.
+If they are not equal, the enxt line checks if a is greater than b, if yes, a is recalculated to be the value of a - b. We do the same for b if a is less than b. 
+Passing the challenge values into this method resulted in the correct answer

@@ -1,0 +1,7 @@
+To find the flag using the Extended Euclidean Algorithm, I followed the procces outlined on the page provded as a hint: https://web.archive.org/web/20230511143526/http://www-math.ucdenver.edu/~wcherowi/courses/m5410/exeucalg.html
+Implemting this algorithm in Python using recursion for the integers 26513 & 32321 provided me with the following results:
+GCD = 1
+u = 10245
+v = -8404
+
+v was the lower number and therefore was the flag. 

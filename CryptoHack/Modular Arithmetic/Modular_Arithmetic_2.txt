@@ -1,0 +1,2 @@
+I created python code to calculate p = 65537
+273246787654**65536 % 65537

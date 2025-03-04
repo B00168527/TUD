@@ -1,0 +1,9 @@
+The problem states the follwoing:
+11 = x mod 6
+
+8146798528947 ≡ y mod 17
+
+Follwoing the formula "a = b mod m" then "a mod m = b"
+
+To solve the issue I just calculated "11 % 6" and "8146798528947 % 17" which provided x and y. 
+y was the smaller value and was the flag

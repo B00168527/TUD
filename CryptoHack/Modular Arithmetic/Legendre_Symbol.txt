@@ -1,0 +1,4 @@
+I first copied the values from the given file into the python file.
+I created a loop to iterate over the int values given where I calculated "pow(a, ((p - 1) // 2), p)" where a is each int.
+If the result was 1, I set the var "actual_a" to be the corresponding int and broke out of the loop. 
+Finally, I calculated the flag from Fermat's little theorem and printed out the result.

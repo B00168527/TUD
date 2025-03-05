@@ -1,0 +1,2 @@
+To solve this issue, I used the built in methods provided in the sage library as that is what the challenge reccommended due to the complexity of the algorithm.
+I then used the smaller of the two values as the flag.

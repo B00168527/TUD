@@ -1,0 +1,3 @@
+I created a loop in my python code to calculate all the quadratic residues of when p = 29.
+From the ints listed on the challenege [14, 6, 11], I found the corresponding values of their a^2. 
+After finding it for 14 was 21, I checked (29-21) which resulted in 8 and passed the challenge.

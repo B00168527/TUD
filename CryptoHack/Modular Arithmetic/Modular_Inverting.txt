@@ -1,0 +1,3 @@
+To solve this problem, I needed to find a value for d in "3 ⋅ d ≡ 1 mod 13". 
+To find the value I needed to loop through all integers (I picked up to 1000) to find what integer resulted in 1 in the following equation "(3 * d) % 13 == 1".
+The result from looping through this was 9.

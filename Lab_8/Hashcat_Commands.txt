@@ -1,0 +1,14 @@
+1. Finds the password for "Tomtom"
+hashcat -m 120 -a 3 06f6fe0f73c6e197ee43eff4e5f7d10fb9e438b2:www.exploringsecurity.com ?d?d?d?d?d
+
+2. Finds the password for "security"
+hashcat -m 120 -a 3 fafa4483874ec051989d53e1e432ba3a6c6b9143:www.exploringsecurity.com ?d?d?d?d?d?d
+
+3. Finds the password for "superman"
+hashcat -m 120 -a 3 hash_and_salt.txt ?a?a?a?a?a?a
+
+4. Finds the passwords for "Mark123" and "sparky"
+hashcat -m 120 -a 0 -r /usr/share/hashcat/rules d3ad0ne.rule hash_and_salt.txt /usr/share/wordlists/rockyou.txt
+
+5. Finds the password for "JillC"
+hashcat -m 120 -a 3 hash_and_salt.txt ?1?1?1?1?1?1?1 -1 ?l?u?d

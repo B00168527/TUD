@@ -1,0 +1,4 @@
+The solution to this challenge was simply to subsitute in the value in the sbox in the position of the value of s[row][column]. 
+The code create a temp matrix to store the result, and loops over each row and column of s. 
+The temp matrix is then filled with the value in the index of sbox which matches the value of s[row][column]. 
+matrix2bytes is then used to retrieve the flag from the temp matrix. 

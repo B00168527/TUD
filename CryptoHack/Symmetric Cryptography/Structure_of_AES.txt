@@ -1,0 +1,3 @@
+To convert the matrix into a an array, the method loops through each cell in the matrix and adds it to the array.
+After collecting all the cells, the code loops through the array and converts each value to it's corresponding ASCII value to produce the flag.
+The flag is then returned which was "crypto{inmatrix}"

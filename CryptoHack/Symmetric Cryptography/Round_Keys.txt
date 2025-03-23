@@ -1,0 +1,4 @@
+To add the round key, I first created a temp matrix which would store the result. 
+A loop was created to loop through each cell of the s and k matricies. 
+The value of each cell of s and k were XOR'ed together and the result was stored in the corresponding cell in the temp matrix. 
+Finally, the matrix2bytes function created in the previous challenge printed out the flag which was then returned.

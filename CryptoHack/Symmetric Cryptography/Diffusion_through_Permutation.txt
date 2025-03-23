@@ -1,0 +1,6 @@
+To invert the the shift, the method "inv_shift_rows" does the opposite of the method "shift_rows". 
+"shift_rows" moves values in the matrix from one cell to another. One example is that the value "s[0][1]" is moved to "s[3][1]". 
+In "inv_shift_rows", the method simply swaps these values back by setting "s[0][1] = s[3][1]". 
+This is repeated for all cells. 
+The code then calls "inv_mix_columns" and "inv_shift_rows" to reorder the matrix into the correct order.
+The flag is printed out by calling "matrix2bytes".

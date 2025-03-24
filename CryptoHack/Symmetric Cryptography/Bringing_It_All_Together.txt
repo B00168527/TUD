@@ -1,0 +1,10 @@
+This challenge brought together all of the previous code challenges to decrypt ciphertext provided.
+The methods used were copied from previous challenges and some were slightly modified to return the matrix rather than plaintext. 
+
+In the main section of the code, I set the steps of calling the following:
+1. Convert the ciphertext to a matrix named "state".
+2. Perform the initial Add Key Round step
+3. Begin a loop through the N_Rounds (which is 10) up until 9.
+4. In each loop, invert the row shift (inv_shift_rows), invert the byte substitution (inv_sub_bytes), add the round key (add_round_key) and finally invert the column mix (inv_mix_columns)
+5. After the loop is finished, the final row shift is inverted, followed by the final inverting of byte subtitution and round key.
+6. The matrix is finally converted to readable plaintext using "matrix2bytes" and is returned. 

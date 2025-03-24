@@ -1,0 +1,5 @@
+To solve this challenge, the tools on the redirected website were used.
+The steps taken to find the flag were:
+1. Run encrypt_flag() - Returns the ciphertext
+2. Run decrypt() with the ciphertext - Returns the hex value
+3. Convert the hext value returned from decrypt() to ASCII which revealed the flag "crypto{bl0ck_c1ph3r5_4r3_f457_!}"

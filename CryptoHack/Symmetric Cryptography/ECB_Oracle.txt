@@ -1,0 +1,4 @@
+To capture this flag, the code exploits the weakness of ECB in that identical plaintext blocks are identical when encrypted. 
+The code loops through all possible letters for the cryptohack flag value and compares it's encrypted block to the encrpyted block of the compare value. 
+When the code finds identical blocks, it means that the chars match and it appends that char to the flag. 
+When the final char of the cryptohack flags ("}") is found, the code knows that the whole flag has been found and prints it out. 

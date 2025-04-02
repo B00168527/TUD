@@ -1,0 +1,5 @@
+To capture the flag, the code first calls the encrypt() method which is a web service call which returns the ciphertext.
+The code then splits up the ciphertext into 16 byte blocks but separates the first block as the initialisng vector.
+All blocks apart from the first, is then decrypted using the decrypt() method which calls the web service provided by the challenge.
+Each block are then XORed with the previous block to reverse the CBC mode. 
+Finally, the decoded blocks are combined to reveal the flag.

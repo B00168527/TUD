@@ -1,0 +1,5 @@
+Firstly the script retrieves the encrypted cookie from the server, which contains "admin=False;expiry=<timestamp>", encrypted using AES-CBC.
+It then locates the "admin=False" text in the expected plaintext and prepares a replacement string ";admin=True;".
+The code then uses a bit-flipping attack, which modifies both the IV (first block) and the ciphertext (second block) so that when decrypted, it changes "admin=False" to "admin=True".
+The modified IV and ciphertext are sent back to the endpoint which tricks it into believing the user is an admin.
+As the system now believes the cookies is for an admin, it returns the correct flag

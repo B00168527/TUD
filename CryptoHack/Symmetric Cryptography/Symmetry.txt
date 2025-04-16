@@ -1,0 +1,9 @@
+To sovle this challenge, I first retrieved the encrypted flag from the endpoint. I then extracted the IV and the first ciphertext block. 
+Next I encrypted some know plaintext of 16 zero's using the known IV. 
+I then XOR'ed the ciphertext block with the corresponding corresponding keystream block to decrypt the ciphertext and reveal the original plaintext. 
+After printing out the first ciphertext block, I noticed that the full flag was not revealed, and so I repeated the above steps with the second block. 
+The output was the following:
+Recovered first 16 bytes: crypto{0fb_15_5y
+Recovered second 16 bytes: mm37r1c4l_!!!11!
+
+I assumed this was the full key without the final character of "}" and so added "}" to "crypto{0fb_15_5ymm37r1c4l_!!!11!" which was the correct flag. 

@@ -1,0 +1,1 @@
+Used the "pow" function and fed in all the values provided. Printed out the flag.

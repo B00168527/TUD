@@ -1,0 +1,1 @@
+Used the "pow" function and fed in all the values provided. Caluclated the Modulus value by multiplying p (17) with q (23). Printed out the flag.

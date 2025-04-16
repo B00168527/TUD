@@ -1,0 +1,5 @@
+To solve this challenge and reveal the flag, I was able to use the known header format of PNG files. 
+First I requested the encrypted file from the endpoint and converted it to bytes. 
+As I know the PNG header format, I XOR'ed the first 16 bytes of the encrypted file with the known header which revealed the keysteam. 
+Knowing the keystream, I simply XOR'ed the full file with the keystream to decrypt it. 
+Finally, I saved the decrypted file to my laptop and opened it to reveal the flag. 

@@ -1,0 +1,2 @@
+I used the "factorint" function from sympy to solve this issue. I passed the number provided by the challenge into the function which revealed the 2 primes.
+I selected the smaller one which was the flag. 

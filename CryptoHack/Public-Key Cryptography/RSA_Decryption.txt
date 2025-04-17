@@ -1,0 +1,4 @@
+I used the following formula to decrypt the message:
+plaintext = ciphertext^^d mod N
+
+I then printed out the plaintext

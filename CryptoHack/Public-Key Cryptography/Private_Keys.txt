@@ -1,0 +1,1 @@
+Plugged the values into the Python code for the formula: d≡ e−1 modϕ(N) which produced the key.

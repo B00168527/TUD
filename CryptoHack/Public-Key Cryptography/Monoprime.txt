@@ -1,0 +1,6 @@
+The challenge hinted that instead of using a product of two primes for RSA, the modulus n is actually a single prime number. 
+In normal RSA, the private exponent d is computed using Euler’s totient function φ(n), which for a prime is simply n - 1. 
+I calculated "d = e⁻¹ mod (n - 1)" using the modular inverse. 
+I then decrypted the ciphertext with standard RSA decryption "pt = ct^d mod n". 
+Finally, I converted the resulting integer plaintext into a readable string using long_to_bytes() and printed it out.
+

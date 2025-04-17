@@ -1,0 +1,3 @@
+To solve the challenge, I used the Chinese Remainder Theorem, which finds a number that satisfies multiple modular congruences at once. 
+I plugged the given values (moduli and remainders) into the "crt" function from the sympy library. This function calculated the unique solution x
+The function gave me the value of 872 which was the flag. 

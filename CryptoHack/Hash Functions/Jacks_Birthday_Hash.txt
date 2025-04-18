@@ -1,0 +1,2 @@
+Jack's hash function uses 11-bits which means there is 2^11 possible outputs which is 2048. 
+The solving of this problem involves following the forumla of the Birthday paradox. I simply used the formula to find the answer and used it as the flag.

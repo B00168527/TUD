@@ -1,0 +1,4 @@
+To solve this challenge, I did not need to do any operations with the key.
+The challenge mentions that the flag is available on one of the subdomains of "cryptohack.org".
+I simply used the certificate search site "https://crt.sh/" and searched for "cryptohack.org".
+One of the results produced was "thetransparencyflagishere.cryptohack.org	" which contained the flag for the challenge.

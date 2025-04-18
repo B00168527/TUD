@@ -1,0 +1,5 @@
+To solve this challenge, I examined the encryption code and looked at how each bit was encoded using powers of a base modulo a prime. 
+The encrytption worked by check if the bit was a 1, the number was left as-is, but if it was a 0, the number was negated modulo p. 
+To figure out which was which, I used the Legendre symbol (method from sympy) to check whether each number was a quadratic residue mod p. 
+If the Legendre symbol function returned 1, I knew the bit was originally a 1; if it returned -1, it was a 0. 
+I then rebuilt the full bitstring and converted it back into bytes before printing out the decrypted flag.

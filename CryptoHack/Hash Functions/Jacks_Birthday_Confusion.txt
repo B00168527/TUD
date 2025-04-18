@@ -1,4 +1,4 @@
 The main difference with this challenge to the last is that the third secret can potentially be identical to the first or second hashes.
 The probability of of a collision becomes much higher. 
 The code calculates the probability with the following formula:
-math.sqrt(2 * (2048) * math.log(1 / (1 - probability)))
+math.sqrt(2 * (2048) * math.log(1 / (1 - 0.75)))

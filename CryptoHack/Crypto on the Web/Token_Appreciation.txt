@@ -1,0 +1,3 @@
+I used the PyJWT library as suggested to decode the token which resulted in the following:
+{'flag': 'crypto{jwt_contents_can_be_easily_viewed}', 'user': 'Crypto McHack', 'exp': 2005033493}
+Here we can see the plaintext flag.

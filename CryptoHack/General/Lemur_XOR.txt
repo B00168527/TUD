@@ -1,0 +1,3 @@
+The challenge provided a very clear hint to XOR the two images of the RGB bytes of the two files and to ignore the metadata values. 
+To solve the challenge, I loaded the 2 files into my python code. I then extracted each pixels RGB values and XOR'ed it with the corresponding value of the other image. 
+The result was saved into a new PNG which revealed the flag. 

@@ -1,0 +1,5 @@
+To solve this problem, I used the bash script command openssl. 
+The full command used was:
+openssl x509 -in 2048b-rsa-example-cert_3220bd92e30015fe4fbeb84a755e7ca5.der -noout -modulus
+
+This provided the modulus of the certificate in hex. To convert it to decimal for the flag, I used an online converter.

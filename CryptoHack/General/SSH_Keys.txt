@@ -1,0 +1,9 @@
+I used the same logic as in the "CERTainly not" challenge to get the modulus.
+To use the same command as the other challenge, I first needed to conver the SSH public (which is not usable by openssl) into the PKCS#8 format. 
+I did this using the following command:
+ssh-keygen -f bruce_rsa_6e7ecd53b443a97013397b1a1ea30e14.pub -e -m PKCS8 > public_rsa.pem
+
+Next I used openssl to retrieve the modulus in hex form on the new format of the key saved in the file "public_rsa.pem".
+openssl rsa -pubin -in public_rsa.pem -noout -modulus
+
+This resulted in the hex value which I converted using an online tool to decimal. 

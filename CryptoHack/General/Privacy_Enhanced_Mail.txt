@@ -1,0 +1,2 @@
+To extract the key as a decimal, I used the Crypto.PublicKey as suggested with the challenge hint. 
+After reading in the file, I simply printed out the value.

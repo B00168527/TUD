@@ -1,0 +1,3 @@
+To solve this challenege, I downloaded the sample python file provided. After running it, the response was that the "shop" only sells flags.
+The code provided was attempting to buy "clothes" which were not available. 
+I changed the "clothes" value to "flag" and reran the code to produce the correct flag.

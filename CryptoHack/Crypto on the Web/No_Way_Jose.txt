@@ -1,0 +1,2 @@
+I sovled this challenge by exploiting a well known vulnerability with JWT. By using the "none" alogrithim, the signature verification is passed. 
+In the python code, I simply set a username, the admin flag to true and the algorithm to "none". This creates a JWT which I used on the challenge site to retrieve the flag. 

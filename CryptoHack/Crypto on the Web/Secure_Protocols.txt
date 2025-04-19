@@ -1,0 +1,1 @@
+Naivgated to the site provided and found the name of the organisation who issued the TLS certificate for the domain. 

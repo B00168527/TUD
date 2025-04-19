@@ -1,0 +1,5 @@
+I solved this challenge by trying to reverse-engineer a sequence of numbers that appear to follow a pattern involving modular arithmetic. 
+To find the p and x values, I generated all 3-digit primes using sympy.isprime and loop through each of them as possible modulus values p. 
+For each prime, I try every number n from 1 to p-1 as a potential multiplier. 
+I check if multiplying each value in the list by n and reducing it modulo p produces the next number in the sequence. 
+If it does for the entire list, I print p and n as they are the correct values for the flag.

@@ -1,0 +1,1 @@
+To solve the challenge, I just calculated the modular inverse of "g mod p" using the pow function. 

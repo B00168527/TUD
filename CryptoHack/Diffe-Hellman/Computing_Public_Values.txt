@@ -1,0 +1,1 @@
+To calculate the number (flag), I justed plugged the values g, a and p given into the pow funciton.

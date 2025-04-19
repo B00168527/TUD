@@ -7,5 +7,5 @@ A = 7024994321759546827855454126497548290928917435151613399449582140071062529184
 B = pow(g, b, p) # Alice's public value
 print(B)
 
-# Shared secret = B^a mod p
+# Shared secret = A^b mod p
 print(pow(A, b, p))

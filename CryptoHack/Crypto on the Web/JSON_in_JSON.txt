@@ -1,0 +1,5 @@
+After analysing the code snippet, it's clear to see that the issue here is an injection flaw. 
+The code constructs a JSON string manually which allows the admin flag to be injected in the username vlaue without being detected.
+To inject the admin flag into the username, I simply entered "user%22%2C%20%22admin%22%3A%20%22True" into the create_session username value which injected the admin flag as true.
+The code snippet runs and checks for the presence of the "admin" and "["admin"] == "True"" which I injected. 
+The flag is then printed out on the challenge page when I provided the token output from create_session.

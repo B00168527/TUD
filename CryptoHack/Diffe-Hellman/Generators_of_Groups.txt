@@ -1,0 +1,2 @@
+To solve this challenge, I created code that checks all possible nymbers to find the smallest primitive root from the field. 
+This number generates all values from 1 to 28150 (28151 - 1) when raised to succesive powers modulo 28151.

@@ -1,0 +1,10 @@
+After inspecting the code snippet proivded in the challenge, the key to finding the flag was to cause a hash collision. 
+The code from the snippet causing this was:
+if document_hash in self.documents.keys():
+            self.exit = True
+            if self.documents[document_hash] == document:
+                return {"error": "Document already exists in system"}
+            else:
+                return {"error": f"Document system crash, leaking flag: {FLAG}"}
+In this case, if a document on the system had the same hash but different text values, the else condition was met which revealed the flag in the error message. 
+To cause the hash collision, I found 2 strings that are known to cause a hash collision when using md5 which this code was using. I found these at the following site: https://crypto.stackexchange.com/questions/1434/are-there-two-known-strings-which-have-the-same-md5-hash-value

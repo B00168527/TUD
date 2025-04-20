@@ -1,0 +1,5 @@
+To discover the flag for this challenge, I did not need to write any code. 
+From reading online, I found that DES has some weak keys such as "0000000000000000FFFFFFFFFFFFFFFF".
+I simply entered this weak key into the "encrypt_flag" function. 
+I copied the output from this encryption into they plaintext value of the "encrypt" function, while once again using "0000000000000000FFFFFFFFFFFFFFFF" as the key. 
+The output from this was the flag in hex. I then used the hex to plaintext option on the page to convert it to the readable key. 

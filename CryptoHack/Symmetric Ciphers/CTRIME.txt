@@ -1,0 +1,5 @@
+The weakness which allowed me to find the flag was the compression completed using zlib. 
+zlib compresses the data and removes duplicate values and provided me with the option to check if the length of the encrypted value was increased.
+I could then run through all letters in the alphabet by appending them to the known beginning of the flag of "crypto{" and check if the length of the encrypted value increased.
+If it increased, I know the character is not already there. If it does not increase, I know it's correct. 
+Once the "}" character is added correctly, I know the full flag has been found and the code completes. 

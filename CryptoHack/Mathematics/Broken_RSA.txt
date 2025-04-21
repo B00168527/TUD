@@ -1,0 +1,8 @@
+Thsi challenge deals with an RSA encryption case where the public exponent e and phi(n) are not coprime. 
+This means I can't normally compute the private key d. 
+To work around this, I first reduce phi(n) by removing its common factors with e until they become coprime. This gives me a usable version of phi. 
+Then, I compute a bunch of e-th roots of unity modulo n by raising numbers to the reduced phi, and I verify that they all satisfy the equation 
+"x^e = 1 mod n"
+Using the reduced phi, I calculate the modular inverse of e to get a valid decryption exponent d, and decrypt the ciphertext to get one possible plaintext. 
+Since roots of unity can multiply valid messages to generate other valid ones, I multiply the decrypted message by each root to generate all possible plaintext candidates. 
+Finally, I convert each numeric plaintext into bytes and check if any contain "cryto{" and print out the one that does. 

@@ -1,0 +1,6 @@
+I solved this challenge by first recovering the prime factor p from n.
+I calculated the integer square root of n using the "isqrt" function. 
+Next, I calculate Euler's totient function "phi" for "n = p^2" as "phi = p * (p - 1)", which is how the totient is computed when "n" is the square of a prime. 
+I then computed the private key "d" by finding the modular inverse of the public exponent "e" modulo "phi" by using the "inverse" function. 
+I decrypted the ciphertext by raising it to the power of "d" modulo "n". 
+Finally I converted the resulting number back into bytes and print it as the decrypted flag.

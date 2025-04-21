@@ -1,0 +1,6 @@
+The idea by this challenge was to exploit the known vulnerability CVE-2020-1472. 
+To solve the challenge, I exploited the weakness in the reset connection function which generates a new encryption key for the CFB8 cipher. 
+The reset password function let me supply an IV and ciphertext which it then decrypts using the current key, updates the password. 
+I provided an IV and ciphertext of all zero bytes, which forced the decrypted password to be a single repeated character. 
+I then attempted to login with an empty password and checked if it was succesful. 
+I looped over this logic and reset the connection each time if the login attempt was unsuccesful. Eventually the login worked and the flag was printed out. 

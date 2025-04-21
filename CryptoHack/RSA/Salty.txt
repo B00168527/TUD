@@ -1,0 +1,3 @@
+Since e = 1, the ciphertext is the plaintext modulo n. 
+I recovered the plaintext by calculating "ct % n".
+I converted the value to hex and printed it out. 

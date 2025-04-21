@@ -1,0 +1,3 @@
+To create the flag, I copied N, d and the message into my code.
+Next, I hashed the message using SHA256 and then signed the key using the private key (hash^d mod N).
+I then printed out the value and entered it as the flag.

@@ -1,0 +1,4 @@
+To find the cipher value, I ran the following command:
+openssl s_client -connect tls1.cryptohack.org:443 -tls1_2
+which connected and printed out the values. 
+I then found the cipher value and entered it as the flag. 

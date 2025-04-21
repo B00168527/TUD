@@ -11,10 +11,10 @@ p = isqrt(n)
 # Compute phi for n = p^2
 phi = p * (p - 1)
 
-# Step 3: Recover d
+# Calculate d
 d = inverse(e, phi)
 
-# Step 4: Decrypt the ciphertext
+# Decrypt the ciphertext
 pt = pow(ct, d, n)
 flag = long_to_bytes(pt)
 print("Flag:", flag.decode())

@@ -1,0 +1,9 @@
+The challenge provided an endpoint which returned a random value from a list of encrypted texts. One of these random texts was the flag.
+The first thing to do was to collect all these values. I called the endpoint provided 100 times and put all the values returned into a set. 
+I commented out this section of the code and hardcoded all the texts returned so I was not calling the endpoint with every run of the code. 
+From the challenge, we know that all the ciphertexts returned were encrypted using the same key. As a result, if I found the correct keysteam, I could decrypt all the texts. 
+I knew the flag would begin with "crypto{" and XOR'ing this with the correct text for the flag would return the keystream. 
+I looped over each text xoring it with the know prefix of the flag to find the correct keystream. 
+After finding the correct keystream, I partially decrypted each text and printed it out. 
+I was able to guess next words and characters of these string and update the known prefix value. 
+I repeated this until I found the correct flag. 

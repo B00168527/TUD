@@ -1,0 +1,4 @@
+I solved this challenge by using Wieners Attack.
+I used the following library in my code: https://github.com/orisano/owiener
+Once imported, and the N, e and c values were set, I called the owiener.attack function whch returned d.
+With d, I could now obtain the flag by calling pow(c, d, N).

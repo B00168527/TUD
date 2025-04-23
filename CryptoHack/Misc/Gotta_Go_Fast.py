@@ -5,7 +5,7 @@ from pwn import remote
 from Crypto.Util.number import long_to_bytes
 
 # Send the payload to the endpoint
-def get_challenge(connection, payload):
+def get_encrypted(connection, payload):
     connection.sendline(json.dumps(payload).encode())
     # Return the response
     return connection.recvline()
@@ -28,7 +28,8 @@ def try_decrypt_flag(connection):
     while True:
         try:
             # Get the encrypted value
-            response = get_challenge(connection, get_flag_payload)
+            response = connection.recvline()
+            response = get_encrypted(connection, get_flag_payload)
             encrypted_hex = json.loads(response.decode())['encrypted_flag']
             encrypted_bytes = bytes.fromhex(encrypted_hex)
 
@@ -40,7 +41,7 @@ def try_decrypt_flag(connection):
             print(flag)
             break
         except Exception:
-            # Mismatch in timing, try again
+            # Likely a mismatch in timing, just try again
             continue
 
 connection = remote('socket.cryptohack.org', 13372)

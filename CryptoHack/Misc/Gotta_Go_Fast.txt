@@ -1,0 +1,6 @@
+To solve the challenge, I first connect to the server and retrieve the encrypted value.
+The server encrypts the flag using a key that's just a SHA-256 hash of the current Unix timestamp "time.time()". 
+I take that encrypted flag and try to decrypt it by re-encrypting it using the exact same logic the server used which will XOR with the same key twice and decrypt the flag. 
+To do this, I generate a key using my own time.time() function. 
+If the time matches exactly then my re-encryption reveals the original flag. 
+The code loops until the same time is used and then prints the flag. 

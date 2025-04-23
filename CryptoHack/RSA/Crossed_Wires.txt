@@ -1,0 +1,6 @@
+This challenge provided me with an RSA private key (N, d), the public keys of five friends, and a ciphertext that was the result of encrypting a flag through each friend's public key one after the other. 
+To reverse this and reveal the flag, I needed to undo all those exponentiations.
+First, I multiplied all five of the friends public exponents together to get one big exponent E, since each encryption raised the message to another power modulo N. 
+Then, using my private exponent d, I reconstructed φ(N) by calculating phi = e * d - 1, because e * d ≡ 1 mod φ(N).
+With φ(N) and the combined exponent E, I computed the modular inverse D = E⁻¹ mod φ(N), which is the exponent that would reverse all of their encryptions. 
+Finally, I decrypted the ciphertext with D and printed the flag out. 

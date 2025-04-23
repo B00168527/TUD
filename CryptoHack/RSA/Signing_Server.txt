@@ -1,0 +1,5 @@
+The code solves the challenge by first connecting to the endpoint and retriveing the secret value.
+The secret value is then passed back to the endpoint and signed. 
+After retrieving the singed value, I print it out which reveals a hex value. 
+The printed string begins with "0x" so I simply copy the string without these characters into an online hex to ASCII site to convert it. 
+This then reveals the flag/secret.

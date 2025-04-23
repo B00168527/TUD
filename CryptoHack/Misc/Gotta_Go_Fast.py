@@ -40,7 +40,7 @@ def try_decrypt_flag(connection):
             print(flag)
             break
         except Exception:
-            # Likely a mismatch in timing, just try again
+            # Mismatch in timing, try again
             continue
 
 connection = remote('socket.cryptohack.org', 13372)

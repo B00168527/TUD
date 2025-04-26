@@ -1,0 +1,4 @@
+To solve the challenge, I use Fermat’s factorisation because from examining the code provided, I know the primes p and q are very close together. 
+I start with the square root of n, then keep adjusting it until I find a² - n to be a perfect square. I the can get p and q. 
+After finding the factors, I calculate φ(n) and then use the Extended Euclidean Algorithm to find the modular inverse of e modulo φ(n). This gave me the private key d. 
+Finally, I decrypt the ciphertext c using d, and print out the flag value.

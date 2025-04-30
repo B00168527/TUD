@@ -1,0 +1,4 @@
+I found the flag by taking advantage of a weakness in RSA when the public exponent is small (e = 3) and the message is not large enough to be reduced modulo n. 
+Since the ciphertext was just the cube of the plaintext (m³), I calculated the cube root of the ciphertext directly using "iroot" from the gmpy2 library. 
+I then converted that integer root back into bytes using "long_to_bytes", which gave me the original plaintext message. 
+I printed the result to reveal the flag. This worked because the message was small and no padding or additional encryption protections were used.

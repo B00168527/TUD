@@ -1,0 +1,4 @@
+I defined a function using the Chinese Remainder Theorem to combine several ciphertexts (emails) into one congruence modulo the product of the selected moduli. 
+By iterating through all combinations of 3 out of the 7 given ciphertexts and moduli, I attempt to reconstruct the original message. 
+Since the encryption exponent is small, I take the integer cube root of the CRT result to retrieve the plaintext. 
+Finally, I check if the decoded message contains "crypto{", and if it does, I print out the flag.

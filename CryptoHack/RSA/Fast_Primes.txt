@@ -1,0 +1,5 @@
+In this code, I first defined an "extended_gcd" function that implements the Extended Euclidean Algorithm to find the greatest common divisor of two numbers and the coefficients for Bézout's identity. 
+Next I created a helper function "load_rsa_key` to load the RSA private key from a file. 
+I use these to decrypt the given ciphertext using RSA, by calculating the private key exponent "d" from the known prime factors "p" and "q", as well as the public exponent "e". 
+The "rsa_decrypt" function constructs the private RSA key from the components "n", "e", "d", "p", and "q", and uses the "PKCS1_OAEP" cipher to decrypt the message. 
+I then print the decrypted flag.
